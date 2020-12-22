@@ -178,7 +178,7 @@ h3 {
   text-align: center;
   margin-right: 30px;
   position: relative;
-  width: calc( 100% / 3 );
+  width: calc(100% / 3);
 }
 .benefits-item:last-child {
   margin-right: 0;
@@ -342,7 +342,8 @@ h3 {
 }
 
 .product-box-title,
-.delivery-box-title {
+.delivery-box-title,
+.benefits-item-title {
   max-width: 550px;
   margin-right: auto;
   margin-left: auto;
@@ -354,7 +355,8 @@ h3 {
 }
 
 .product-box-text,
-.delivery-box-text {
+.delivery-box-text,
+.benefits-item-text {
   max-width: 550px;
   margin-right: auto;
   margin-left: auto;
@@ -437,9 +439,36 @@ h3 {
 }
 
 .more-info {
+  position: relative;
   margin-top: 60px;
+  padding: 33px 33px 47px 112px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #f6f8f9;
+}
+
+.more-info::before {
+  position: absolute;
+  content: "";
+  background-image: url(../svg/more-icon.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  left: 65px;
+}
+
+.more-text {
+  margin-right: 50px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #212b31;
+}
+
+.more-link {
+  font-weight: 800;
+  color: #212b31; 
 }
 
 /* /reliability */
@@ -483,7 +512,6 @@ h3 {
 /* /REWARDS */
 
 /* DEMO */
-
 
 .demo-wrapper {
   max-width: 1056px;
