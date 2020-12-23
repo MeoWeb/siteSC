@@ -695,6 +695,41 @@ h3 {
 
 /* /features */
 
+
+/* process */
+
+.process-title {
+  color: #212b31;
+  padding-top: 140px;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+.process-container {
+  display: flex;
+}
+
+.process-list-item {
+  margin-bottom: 30px;
+}
+
+.process-item-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+  margin-bottom: 10px;
+}
+
+.process-item-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
+
+/* /process */
+
+
 /* REWARDS */
 
 .rewards {
