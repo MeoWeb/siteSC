@@ -613,7 +613,6 @@ h3 {
 .buttons-wrapper-features {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 330px;
   padding-top: 60px;
   padding-bottom: 150px;
@@ -698,16 +697,66 @@ h3 {
 
 /* process */
 
+.process {
+  padding-top: 140px;
+}
+
 .process-title {
   color: #212b31;
-  padding-top: 140px;
   font-size: 32px;
   line-height: 48px;
   font-weight: normal;
+  padding-bottom: 21px;
 }
+
 
 .process-container {
   display: flex;
+  justify-content: space-between;
+}
+
+.process-img {
+  margin-top: 60px;
+}
+
+.process-wrapper {
+  width: calc(100% / 2 - 25px);
+}
+
+.process-list {
+  counter-reset: li;
+  list-style: none;
+}
+
+.process-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+
+.process-list li:last-child {
+  margin-bottom: 0;
+}
+
+.process-list li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 40px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  padding: 4px;
+  background: #fff;
+  color: #72787D;
+  text-align: center;
+  border: 2px solid #DADEDF;
+}
+
+.process-list li:hover:before {
+  border: 2px solid #72787D;
+  background: #FFDD76;
 }
 
 .process-list-item {
@@ -727,8 +776,26 @@ h3 {
   color: #72787D;
 }
 
+.buttons-process {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 /* /process */
 
+
+/* advantages */
+
+.advantages {
+  padding-top: 95px;
+}
+
+.advantages-description {
+  text-align: center;
+}
+
+
+/* /advantages */
 
 /* REWARDS */
 
