@@ -786,12 +786,27 @@ h3 {
   padding-top: 95px;
 }
 
+.advantages-wrapper {
+  padding-top: 10px;
+  display: flex;
+}
+
 .advantages-description {
   text-align: center;
 }
 
+.advantages-container {
+  width: 50%;
+}
+
+.advantages-list {
+  padding-top: 40px;
+  padding-left: 65px;
+}
+
 .advantages-list-item {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .advantages-list-item::before {
@@ -801,8 +816,8 @@ h3 {
   z-index: 2;
   width: 50px;
   height: 50px;
-  left: 1px;
-  top: 1px;
+  left: -65px;
+  top: 0px;
 }
 
 .adv-first::before {
@@ -816,6 +831,10 @@ h3 {
 }
 .adv-forth::before {
   background-image: url(../svg/adv4.svg);
+}
+
+.advantages-item-title {
+  margin-bottom: 10px;
 }
 
 /* /advantages */
